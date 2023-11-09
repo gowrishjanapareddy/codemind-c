@@ -1,19 +1,22 @@
 #include <stdio.h>
-int main() {
-  int n, reversed = 0, remainder, original;
-    scanf("%d", &n);
-    original = n;
-    while (n != 0) {
-        remainder = n % 10;
-        reversed = reversed * 10 + remainder;
-        n /= 10;
-    }
-
-    // palindrome if orignal and reversed are equal
-    if (original == reversed)
-        printf("True", original);
-    else
-        printf("False", original);
-
-    return 0;
+int main()
+{
+    int r=0,re,n,a;
+    scanf("%d",&n);
+     a=n;
+   while(n!=0)
+ 
+{
+    re=n%10;
+    r=r*10+re;
+    n/=10;
 }
+if(a==r)
+{
+    printf("Palindrome");
+}
+else 
+{
+    printf("Not Palindrome");
+}
+    }

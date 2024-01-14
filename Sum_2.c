@@ -1,0 +1,16 @@
+#include <stdio.h>
+int main()
+{
+    int i,a,b,x,y,n=0;
+    scanf("%d%d%d%d",&a,&b,&x,&y);
+    for(i=a;i<=b;i++)
+    {
+        
+        if(i%x==0 && i%y!=0)
+        {
+            n=n+i;
+        }
+    }
+    printf("%d",n);
+
+}
